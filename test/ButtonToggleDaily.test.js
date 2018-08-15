@@ -1,12 +1,8 @@
-import { configure, shallow, mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-
-configure({adapter: new Adapter()});
-
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Button from '../lib/ButtonToggleDaily';
-import { shallow, mount } from 'enzyme';
+import { configure, shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import ButtonToggleDaily from "../lib/ButtonToggleDaily";
+configure({adapter: new Adapter()});
 
 describe('button toggle daily', () => {
   let wrapper;

@@ -1,11 +1,10 @@
-import { configure, shallow, mount } from 'enzyme';
+import React from 'react';
+import WelcomeScreen from '../lib/WelcomeScreen';
+import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
 
-import React from 'react';
-import WelcomeScreen from '../lib/WelcomeScreen';
-import './css/welcome.scss';
 
 
 describe('Welcome Screen', () => {
