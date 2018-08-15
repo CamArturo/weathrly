@@ -65,12 +65,8 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "normalize.css": "^8.0.0",
     "update": "^0.7.4"
-=======
     "enzyme-adapter-react-15": "^1.0.5",
     "normalize.css": "^8.0.0"
->>>>>>> c3c71d72ebdc2f9c57aabc5b4008145e6e87a143
   }
 }
