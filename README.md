@@ -28,5 +28,5 @@ the wunderground API and fetch for the API request.
 
 ## Contributors
 
-Camilo Snapp & David Daugherty  
 
+[Camilo Snapp](https://github.com/CamArturo) & [David Daugherty](https://github.com/daughedm)
