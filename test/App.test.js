@@ -1,25 +1,13 @@
-<<<<<<< HEAD
-import { configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-
-configure({ adapter: new Adapter() });
-=======
-import { configure, shallow, mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import React from "react";
+import App from "../lib/app";
+import { configure, shallow } from "enzyme";
+import Adapter from "enzyme-adapter-react-16";
 
 configure({adapter: new Adapter()});
->>>>>>> c3c71d72ebdc2f9c57aabc5b4008145e6e87a143
 
-import React from 'react';
-// import {shallow} from 'enzyme';
-import { shallow, mount, render } from 'enzyme';
-import App from '../lib/app.js';
-import LocalStorageMock from '../src/setupTests';
-
-
-describe('App tests', () => {
+describe("App tests", () => {
   let renderedApp;
-  
+
   window.localStorage = {
     getItem: jest.fn(),
     setItem: jest.fn(),
@@ -33,14 +21,14 @@ describe('App tests', () => {
   }));
 
   beforeEach(() => {
-    renderedApp = shallow(<App/>);
+    renderedApp = shallow(<App />);
   });
 
-  it('should exist', () => {
+  it("should exist", () => {
     expect(renderedApp).toBeDefined();
   });
 
-  it.skip('Should initially have set states of a toggle, true; an undefined city, and error of false', () => {
+  it.skip("Should initially have set states of a toggle, true; an undefined city, and error of false", () => {
     expect(renderedApp.state()).toEqual(
       {
         location: this.getData(),
@@ -51,7 +39,7 @@ describe('App tests', () => {
       });
   });
 
-  it.skip('App should have a default state of key and it should be default value', () => {
+  it.skip("App should have a default state of key and it should be default value", () => {
 
     const expectDefaultState = {
       currWeatherObj: {},
